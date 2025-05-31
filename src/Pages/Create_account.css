@@ -1,0 +1,88 @@
+.create-account-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: black;
+}
+
+.create-account-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: black;}
+
+.create-account-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: black;
+}
+
+.create-account-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f5f5f5;
+  color: black;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+  color: black;
+}
+
+.button-group button {
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  color: black;
+}
+
+.button-group button:first-child {
+  background-color: #3366ff;
+  color: rgb(0, 0, 0);
+}
+
+.button-group button:last-child {
+  background-color: #3366ff;
+  color: rgb(0, 0, 0);
+}
+
+
+.phone-input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.phone-input-group select {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  width: 120px;
+  color: black;
+}
+
+.phone-input-group input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+}

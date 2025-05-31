@@ -1,0 +1,115 @@
+/* Base do site */
+:root {
+  --primary-color: #646cff;
+  --accent-color: #61dafb;
+  --bg-color: #a29e9e;
+  --text-color: #1e1e1e;
+  --radius: 20px;
+  --shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease-in-out;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Root container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo animada */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: var(--transition);
+  filter: brightness(0.9);
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em var(--primary-color));
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em var(--accent-color));
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card com sombra e borda suave */
+.card {
+  padding: 2em;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Texto explicativo */
+.read-the-docs {
+  color: #888;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Caixa principal bonitinha */
+.landing_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* Aumentando tamanho */
+  width: 600px;
+  height: 90vh;
+
+  background: linear-gradient(180deg, #eef2ff, #f9f9ff);
+  color: #1e1e1e;
+  border-radius: 30px;
+  text-align: center;
+  gap: 30px;
+  padding: 60px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+
+  transition: all 0.3s ease-in-out;
+}
+
+/* Botão estiloso */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+button:hover {
+  background-color: #4b52e6;
+  transform: scale(1.05);
+}
