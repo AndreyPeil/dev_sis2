@@ -49,8 +49,9 @@ function Shipping_andContact() {
     <label htmlFor="boleto">Boleto</label>
   </div>
 </div>
+<h3>total: $123</h3>
       <button onClick={() => {alert('comprado')}}>comprar</button>
-    <h3>total: $123</h3>
+    
     <BackToShoppingList/>
 </div>
   );
