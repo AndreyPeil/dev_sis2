@@ -3,11 +3,12 @@ import Edit from "../Components/Edit";
 import Product_in_cart from "../Components/product_in_cart";
 import man_in_hat from "../assets/man_in_hat.png";
 import { useState } from "react";
-import Buy from "../Components/Buy";
+import { useNavigate } from "react-router-dom";
 
 function Cart() {
     
     const [quantity, setQuantity] = useState(1);
+    const navigate = useNavigate();
 
   const handleDecrease = () => {
     setQuantity((q) => (q > 1 ? q - 1 : 1));
@@ -45,7 +46,7 @@ function Cart() {
 
       </div>
         <div className="buy-button-container">
-            <Buy />
+            <button onClick={() => {navigate('/payment')}}>Comprar</button>
             </div>
       </div>
     
