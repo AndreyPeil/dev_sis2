@@ -7,7 +7,7 @@ function Create_account() {
     <div className="create-account-container">
       <h1>Create Account</h1>
       <form>
-        <label>Username:</label>
+        <label>Email:</label>
         <input type="email" name="email" placeholder="example@email.com" />
 
         <label>Password:</label>
